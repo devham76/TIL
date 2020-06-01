@@ -10,8 +10,10 @@
 | ---------- | ----------- |
 | 2020-05-27 | [GitKraken과 git-flow 사용해보기](/content/daily/2020-05-27.md) |
 | 2020-05-28 | [로드 밸런서 & Blocking-NonBlocking-Synchronous-Asynchronous](https://devham76.github.io/tags/#server) |
-| 2020-05-29 | [mysql 스토리엔진](/content/daily/2020-05-29.md) |
-
+| 2020-05-29 | [mysql 스토리지엔진](/content/daily/2020-05-29.md) |
+| 2020-05-30 | [라우팅](/content/daily/2020-05-30.md) |
+| 2020-05-31 | [MSA , MQ](/content/daily/2020-05-31.md) |
+| 2020-06-01 | [NoSQL](/content/daily/2020-06-01.md) |
 
 
 ## 학습할 내용
