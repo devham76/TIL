@@ -14,7 +14,7 @@
 | 2020-05-30 | [라우팅](/content/daily/2020-05-30.md) |
 | 2020-05-31 | [MSA , MQ](/content/daily/2020-05-31.md) |
 | 2020-06-01 | [NoSQL](/content/daily/2020-06-01.md) |
-| 2020-06-02 | [Web에서 client의 요청은 server에서 어떻게 처리될까?](/content/daily/2020-06-21.md) |
+| 2020-06-02 | [Web에서 client의 요청은 server에서 어떻게 처리될까?](/content/daily/2020-06-02.md) |
 
 
 
