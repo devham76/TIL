@@ -25,8 +25,9 @@
 
 | Date       | Content|
 | ---------- | ----------- |
-| 2020-06-10 | [cvelo, 메인화면 front](/content/project/2020-06-10.md) |
+| 2020-06-10 | [cvelog, 메인화면 front](/content/project/2020-06-10.md) |
 | 2020-06-11 | [cvelog, 2차회의, 담당 개발 확정](/content/project/2020-06-11.md) |
+| 2020-06-15 | [cvelog, chatting 서비스 튜토리얼](https://devham76.github.io/etc/websocket_1/)
 
 # 학습할 내용
 - 궁금하고 관심있는 학습예정 목록을 기록합니다.
