@@ -18,6 +18,7 @@
 | 2020-06-03 | [대규모 트래픽을 처리하기 위해 필요한 기술, ip종류](/content/daily/2020-06-03.md) |
 | 2020-06-04 | [ MSA, gateway API / 람다와 스트림 / 인덱스](/content/daily/2020-06-04.md) |
 | 2020-06-05 | [Kafka 손 정리](/content/daily/2020-06-05.md) |
+| 2020-06-19 | [@Controller @RestController 차이](/content/daily/2020-06-19.md) |
 
 
 # 사이드 프로젝트
