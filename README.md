@@ -21,7 +21,6 @@
 | 2020-06-19 | [@Controller @RestController 차이](/content/daily/2020-06-19.md) |
 | 2020-06-20 | [SockJS, STOMP](/content/daily/2020-06-20.md) |
 
-
 # 사이드 프로젝트
 - [velog를 클론코딩 합니다.](https://github.com/cookpad-clone)
 
@@ -29,7 +28,8 @@
 | ---------- | ----------- |
 | 2020-06-10 | [cvelog, 메인화면 front](/content/project/2020-06-10.md) |
 | 2020-06-11 | [cvelog, 2차회의, 담당 개발 확정](/content/project/2020-06-11.md) |
-| 2020-06-15 | [cvelog, chatting 서비스 튜토리얼](https://devham76.github.io/etc/websocket_1/)
+| 2020-06-15 | [cvelog, chatting 서비스 튜토리얼](https://devham76.github.io/etc/websocket_1/)|
+| 2020-06-18 | [chatting 오류 확인](/content/project/2020-06-18.md) |
 
 # 학습할 내용
 - 궁금하고 관심있는 학습예정 목록을 기록합니다.
