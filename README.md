@@ -23,6 +23,13 @@
 | 2020-06-26 | [GraphDB_미완성](/content/daily/2020-06-26.md) |
 | 2020-07-08 | [Kerberos란?](/content/daily/2020-07-08.md) |
  
+ 
+# 개발 관련 책 읽기
+
+### [Clean Code](http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9788966260959)
+| Date       | Content|
+| ---------- | ----------- |
+| 2020-07-08 | [깨끗한 코드란?](/content/book_review/2020-07-08.md) |
 
 # 사이드 프로젝트
 - [velog를 클론코딩 합니다.](https://github.com/cookpad-clone)
