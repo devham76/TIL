@@ -21,7 +21,7 @@
 | 2020-06-19 | [@Controller @RestController 차이](/content/daily/2020-06-19.md) |
 | 2020-06-20 | [SockJS, STOMP](/content/daily/2020-06-20.md) |
 | 2020-06-26 | [GraphDB_미완성](/content/daily/2020-06-26.md) |
-
+| 2020-07-08 | [Kerberos란?](/content/daily/2020-07-08.md) |
 
 
 # 사이드 프로젝트
