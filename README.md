@@ -2,7 +2,7 @@
 > 매일 학습한 내용을 기록합니다.
 
 - 매일 학습한 내용과 배운점, 느낀점을 포함하여 기록합니다.
-- 주관적인 의견을 제외한 내용은 [기술 블로그](http://devham76.github.io/)에 기록합니다.
+- 상세한 내용은 [기술 블로그](http://devham76.github.io/)에 기록합니다.
 
 # 개인 학습
 
@@ -22,7 +22,7 @@
 | 2020-06-20 | [SockJS, STOMP](/content/daily/2020-06-20.md) |
 | 2020-06-26 | [GraphDB_미완성](/content/daily/2020-06-26.md) |
 | 2020-07-08 | [Kerberos란?](/content/daily/2020-07-08.md) |
-
+ 
 
 # 사이드 프로젝트
 - [velog를 클론코딩 합니다.](https://github.com/cookpad-clone)
