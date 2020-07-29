@@ -38,6 +38,10 @@
 - 궁금하고 관심있는 학습예정 목록을 기록합니다.
 - 빠른시일 내에 조사, 공부하고 기록할 예정입니다.
 
+- Time out 이란
+- pinpoint 란 
+- gradle (compile, compileOnly..등의 차이)
+
 ## 내용
 - 테스트 코드의 종류
   - spring내에서 테스트 코드
