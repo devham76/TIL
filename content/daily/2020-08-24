@@ -1,0 +1,84 @@
+
+# SpringApplication
+자바 메인 메소드에서 어플리케이션(스프링기반)을 실행할 수 있는 클래스이며 대략적으로 아래와 같이 동작을 수행함.
+
+- ApplicationContext생성
+- 커맨드 라인 인자를 스프링 속성으로 표시하는 CommandLinePropertySource 등록
+- 모든 싱글턴 빈의 로드 및 생성
+- 모든 CommandLineRunner 빈 실행
+
+
+```
+@SpringBootApplication public class Application { 
+    public static void main(String[] args) throws DbxException { 
+        //빌더를 이용한 방법 
+        SpringApplicationBuilder applicationBuilder = new SpringApplicationBuilder(Application.class); 
+        SpringApplication application = applicationBuilder.build(); 
+        application.run(args); 
+        
+        //static 메소드를 이용한 방법 
+        SpringApplication.run(Application.class,args); 
+    } 
+}
+
+```
+
+# @Setter(onMethod_ = { @Autowired }) 
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+인스턴스 변수 (= restaurant ) 에 알맞은 타입의 객체 (= Restaurant ) 를 자동으로 주입해달라는 어노테이션
+
+```
+@Setter(onMethod_ = { @Autowired }) 
+private Restaurant restaurant; 
+```
+https://rengineer.tistory.com/22
+
+
+# ConfigurationProperties
+properties 파일의 key 값이 아래와 같이 같은 값으로 시작할 때, 그것을 묶어서 Bean으로 등록할 수 있다.
+https://velog.io/@max9106/Spring-Boot-%EC%99%B8%EB%B6%80%EC%84%A4%EC%A0%95-4xk69h8o50
+
+
+# equals, hashCode 자동 생성
+자바 빈을 만들 때 equals와 hashCode 메소드를 자주 오버라이딩 하는데요. @EqualsAndHashCode 어노테이션을 사용하면 자동으로 이 메소드를 생성할 수 있습니다.
+
+```
+@EqualsAndHashCode(callSuper = true)
+public class User extends Domain {
+  private String username;
+  private String password;
+}
+```
+
+callSuper 속성을 통해 equals와 hashCode 메소드 자동 생성 시 부모 클래스의 필드까지 감안할지 안 할지에 대해서 설정할 수 있습니다.
+즉, callSuper = true로 설정하면 부모 클래스 필드 값들도 동일한지 체크하며, callSuper = false로 설정(기본값)하면 자신 클래스의 필드 값들만 고려합니다.
+
+```
+User user1 = new User();
+user1.setId(1L);
+user1.setUsername("user");
+user1.setPassword("pass");
+
+User user2 = new User();
+user1.setId(2L); // 부모 클래스의 필드가 다름
+user2.setUsername("user");
+user2.setPassword("pass");
+
+user1.equals(user2);
+// callSuper = true 이면 false, callSuper = false 이면 true
+````
+
+https://www.daleseo.com/lombok-popular-annotations/
+
+# Runnable Interface
+
+ 자바에서 스레드를 구현할 때 Thread Class와 Runnable Interface를 이용 합니다. 둘의 뚜렷한 차이점은 클래스와 인터페이스라는 구현된 방식에서 발생 합니다. 
+ 자바에서는 한개 이상의 클래스를 상속 받을 수 없습니다. 다중 상속을 언어 차원에서 막았기 때문 입니다. 
+ 그렇기 때문에 Thread 클래스를 상속(extends) 받아서 스레드를 구현한 자식 클래스는 다른 클래스를 상속(extends) 받을 수 없습니다. 
+ 그러나 Runnable 인터페이스를 상속(implements) 받은 자식 클래스는 다른 클래스를 상속(extends) 받을 수 있습니다. 
+ 즉, 엄밀히 따지면 다중 상속은 아니지만 효과를 낼 수 있습니다. 
+ Runnable  인터페이스를 상속 받은 클래스도 Thread 객체를 만들어서 스레드로 사용하기 때문에 성능에서의 차이점은 없는 것 같습니다.
+
+출처: https://inor.tistory.com/10 [Inor]
