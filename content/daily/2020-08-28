@@ -1,0 +1,21 @@
+
+# DB, DBMS, DB Application, DBS(DataBase System)
+
+## DB(DataBase)
+데이터들의 집합, 모음 자체를 뜻한다.
+단순한 모음이 아니라 일반적으로 잘 정리되어 표준화된 모음을 의미한다.
+
+## DBMS(DataBase Management System)
+사용자들이 데이터베이스에 있는 데이터들을 접근하고 사용하기 위해 쓰이는 시스템이다.
+DB자체만을 가지고 데이터를 이용하려면 불편하다.
+DBMS에 내장된 질의어들을 통해 사용자들은 DB에 접근할 수 있다.
+
+## DB Application
+데이터베이스가 사용되고 적용되는 것을 의미한다.
+생산분야에서는 재고,주문, 생산 부분에서 DB가 이용된다.
+이처럼 데이터베이스가 적용되는 시스템을 의미한다.
+
+## DBS (DataBase System)
+데이터베이스를 생성, 사용, 저장 관리하는 시스템 전체를 의미한다
+DB + DBMS + DB Application 을 포괄하는 개념
+가장 광범위한 개념
