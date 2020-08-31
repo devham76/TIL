@@ -1,0 +1,63 @@
+# Mybatis
+
+## JDBC
+JDBC란 Java에서 DB와 연동하기 위해 사용하는 API이다.
+JDBC는 DB연동에 필수적으로 사용하는 것인데
+이 JDBC만 사용해서 DB쿼리문을 작성하면 java소스와 쿼리소스가 겹치게 되고 관리가 어려워진다.
+
+Mybatis는 SQL쿼리문을 xml형식의 파일로 분리시켜 저장관리할 수 있고 java소스에서 xml태그의 id만 호출하며 개발의 편리함을 제공한다.
+Mybatis는 xml형식의 쿼리파일을 저장 및 호출하는 역할을 내부적으로 처리하는 것이다.
+
+## 왜 Mybatis를 사용할까?
+
+### Mybatis 없었을때 소스
+
+```
+public Entity selectFAQList(UserConnection conn, Entity param) throws SQLException {
+    UserStatement stmt = null;
+    ResultSet rslt = null;
+    StringBuffer sql = new StringBuffer();
+    sql.append("\n SELECT *");
+    sql.append("\n FROM");
+    sql.append("\n TABLE1");
+    stmt = conn.prepareStatement(sql.toString());
+    rslt = stmt.executeQuery();
+    Entity _DATA = new Entity();
+    _DATA.put("_DATA", EntityUtil.ResultSetToClobList(rslt));
+    return _DATA;
+}
+```
+
+### Mybatis 적용 소스
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+  <ENTITY id="table.getTable1List" type="SQL" return="List">
+    <![CDATA[
+        SELECT *
+            FROM
+            TABLE1
+    ]]>
+    <PARAMS>    
+    </PARAMS>
+  </ENTITY>
+
+```
+
+- DBCP만 썼을때 Connection, ResultSet, Statement, Transaction 관리 하는 기능을 따로 개발해야 한다.
+- 특히 운영하다 명시적인 Connection, ResultSet, Statement, Transaction을 잘못(닫질 않아) 써서 서버가 죽는 경우가 있다
+- ResultSet의 데이터 매핑을 신경써야한다
+- 쿼리 소스의 append를 이용한 하드코딩으로 소스 분석 관리 어렵다. 
+
+
+결론 : Mybatis를 사용하는 이유 -> 코드의 방대함과 유지보수의 어려움해결, 빠르고 쉬운 개발이 가능
+
+
+## hibernate와 비교 결론
+JPA는 통계 쿼리 처럼 복잡한 SQL을 수행하기 힘들고, 내가 지금 진행할 통계 서비스에는 맞지 않는다.
+따라서 Mybatis를 사용할 예정이다.
+
+### 참고
+- https://shlee0882.tistory.com/4
+- https://m.blog.naver.com/PostView.nhn?blogId=chyperion&logNo=221571051519&proxyReferer=https:%2F%2Fwww.google.com%2F
+- https://victorydntmd.tistory.com/195
