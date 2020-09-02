@@ -22,8 +22,12 @@
 | 2020-06-20 | [SockJS, STOMP](/content/daily/2020-06-20.md) |
 | 2020-06-26 | [GraphDB_미완성](/content/daily/2020-06-26.md) |
 | 2020-07-08 | [Kerberos란?](/content/daily/2020-07-08.md) |
- 
- 
+| 2020-08-24 | [SpringApplication](/content/daily/2020-08-24.md) |
+| 2020-08-25 | [Configuration & Inner class](/content/daily/2020-08-25.md) |
+| 2020-08-28 | [DB, DBMS, DB Application, DBS](/content/daily/2020-08-28.md) |
+| 2020-08-30 | [Mybatis](/content/daily/2020-08-30.md) |
+
+
 # 개발 관련 책 읽기
 
 ### [Clean Code](http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9788966260959)

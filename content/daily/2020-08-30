@@ -53,10 +53,6 @@ public Entity selectFAQList(UserConnection conn, Entity param) throws SQLExcepti
 결론 : Mybatis를 사용하는 이유 -> 코드의 방대함과 유지보수의 어려움해결, 빠르고 쉬운 개발이 가능
 
 
-## hibernate와 비교 결론
-JPA는 통계 쿼리 처럼 복잡한 SQL을 수행하기 힘들고, 내가 지금 진행할 통계 서비스에는 맞지 않는다.
-따라서 Mybatis를 사용할 예정이다.
-
 ### 참고
 - https://shlee0882.tistory.com/4
 - https://m.blog.naver.com/PostView.nhn?blogId=chyperion&logNo=221571051519&proxyReferer=https:%2F%2Fwww.google.com%2F
