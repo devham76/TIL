@@ -26,6 +26,8 @@
 | 2020-08-25 | [Configuration & Inner class](/content/daily/2020-08-25.md) |
 | 2020-08-28 | [DB, DBMS, DB Application, DBS](/content/daily/2020-08-28.md) |
 | 2020-08-30 | [Mybatis](/content/daily/2020-08-30.md) |
+| 2020-09-02 | [spring batch](/content/daily/2020-09-02.md) |
+| 2020-09-23 | [version](/content/daily/2020-09-23.md) |
 
 
 # 개발 관련 책 읽기

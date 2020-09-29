@@ -1,0 +1,40 @@
+# Kotlin - 기본 문법 예제2
+
+## 고차함수 & 람다함수
+
+```kotlin
+fun main() {
+    // 고차 함수, b함수를 호출할 때 a함수를 넘겨줌
+	b(::a)
+
+    // val 변수이름:함수의 형식 = {받을 변수 -> 실제 동작할 코드}
+    val c: (String)->Unit = {str -> println("$str 람다함수")}
+	b(c)
+}
+
+fun a(str: String){
+    println("$str 함수 a")
+}
+
+/*
+ * 함수를 파라메터로 받아오려면
+ * (해당 함수의 파라메터) -> 해당 함수의 반환형
+ * */
+fun b(function: (String)->Unit){
+    function("함수b에서 호출했음")
+}
+```
+
+### 람다함수 - 여러 줄로 사용 가능
+```kotlin
+fun main() {
+    val cal: (Int,Int) -> Int = {a,b -> 
+    	println(a)
+    	println(b)
+    	a+b	// 마지막 구문의 값이 반환됨
+    }
+    
+    val result = cal(1,2)
+    println("result : "+result)
+}
+```

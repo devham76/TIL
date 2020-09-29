@@ -1,0 +1,126 @@
+# Kotlin - 기본 문법 예제1
+
+```kotlin
+/**
+ * You can edit, run, and share this code. 
+ * play.kotlinlang.org 
+ */
+
+fun main() {
+    var a =1
+    val inform = "this is like final"
+    println("Hello, world!!!"+a+", "+inform)
+
+	var string = """안녕
+    안녕하세요 
+    안녕안녕 안녕하세요 ~~"""
+
+    var l :Long = 12;
+	println(string is String)
+    doWhen(l);
+    doWhen("nothing")
+    
+    for(i in 0..9 step 3){
+        print(i)
+    }
+    println();
+    for(i in 9 downTo 0 step 3){
+        print(i)
+    }   
+    println();
+    for(i in 'a'..'z'){
+        print(i);
+    }
+    println()
+    
+    var a1 = Animal("햄",20,"사람")
+    var a2 = Animal("코기", 3, "개")
+    var dog = Dog("웰시", 5)
+    println()
+    a1.whoami()
+    a2.whoami()
+    dog.whoami()
+    //a2.bark() 오류
+    dog.bark()
+    
+    var a4 = Animal("피코", 10)
+    var a5 = Animal("요요", 9)
+    dog.eat()
+    
+    var gg = Gaebokqi()
+	gg.pain()
+    gg.comming()
+    
+    var s = Snake()
+    s.run()
+    s.eat()
+}
+interface Runner{
+    fun run()
+}
+interface Eater{
+    fun eat(){
+        println("음식을 먹는다")
+    }
+}
+class Snake : Runner, Eater{
+    override fun run(){
+        println("스스스...스..스스...")
+    }
+    override fun eat(){
+        println("입이 쯔어어어어억")
+    }
+}
+abstract class Days(){
+    abstract fun pain()
+    fun comming(){
+        println("기분나쁘아.....웩")
+    }
+}
+class Gaebokqi : Days(){
+    override fun pain(){
+        println("배가 너무 아픕니다요ㅠㅠ")
+    }
+}
+
+// ()이부분이 생성자
+open class Animal(var name:String, var age:Int, var kind:String){
+    // 기본생성자
+    init{println("${this.kind} 동물이 생성됐다")}
+    
+    // 보조 생성자 - 기본 생성자를 통해 초기화해줘야 한다
+    constructor(name:String, age:Int) : this(name, age, "냥이"){
+        println("보조 생성자가 사용되었다 ${name}, ${age}, ${kind}")
+    }
+    fun whoami(){
+        println("안뇽하세요 저는${name}입니다 ${age}살이고 ${kind}입니다 휴먼")
+    }
+    open fun eat(){
+        println("음식을 먹는당")
+    }
+}
+class Dog(name:String, age:Int) : Animal (name, age, "개"){
+	fun bark(){
+        println("왈왈왈 멍멍멍 으르렁")
+    }
+    override fun eat(){
+        println("개껌을 쯔압쯔압")
+    }
+}
+class Cat(name:String, age:Int) : Animal(name, age, "냥이"){
+    fun gruming(){
+        println("냐옹냐옹")
+    }
+}
+
+fun doWhen(a: Any){
+   var result = when(a){
+		1-> "정수 1이다"
+        "devham" -> "devham입니당"
+        is Long -> "Long 타입입니당"
+        //!is String -> println("String 타입은 아니즤");
+        else -> "아무 노래나 일단 트뤄"
+    }
+   println(result)
+}
+```
