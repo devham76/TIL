@@ -28,6 +28,11 @@
 | 2020-08-30 | [Mybatis](/content/daily/2020-08-30.md) |
 | 2020-09-02 | [spring batch](/content/daily/2020-09-02.md) |
 | 2020-09-23 | [version](/content/daily/2020-09-23.md) |
+| 2020-09-24 | [Kotlin-기본예제](/content/daily/2020-09-24.md) |
+| 2020-09-25 | [Kotlin-고차&람다 함수](/content/daily/2020-09-25.md) |
+| 2020-09-29 | [Kotlin-scope 함수 & object](/content/daily/2020-09-29.md) |
+
+
 
 
 # 개발 관련 책 읽기
