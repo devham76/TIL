@@ -21,10 +21,15 @@
 ## 참고
 
 subscribeOn으로 별도 스레드로 동작시키고자 한다면 fromSupplier이 아닌 fromCallable을 추천.
-Callable과 Supplier의 기능상으로 크게 차이는 없지만(Callable은 exception이 throw 될 수도 있다는 가정의 추가 정도), 인터페이스상 목적의 차이가 존재하는 것으로 알고 있습니다.
+Callable과 Supplier의 기능상으로 크게 차이는 없지만 `(Callable은 exception이 throw 될 수도 있다는 가정의 추가 정도),` 인터페이스상 `목적의 차이가` 존재하는 것으로 알고 있습니다.
 
-Callable이 Supplier의 기능의 구체화된 의미로 보시면 되고, Callable이 해당 instance가 다른 스레드로 실행될 수 있다라는 의미를 내포하고 있다.
+Callable이 Supplier의 기능의 구체화된 의미로 보시면 되고, `Callable이 해당 instance가 다른 스레드로 실행될 수 있다라는 의미를 내포하고 있다.`
 따라서, 현재는 subscribeOn으로 다른 스레드로 동작시키기에, Callable이 좀 더 유의미한 사용일것이다.
+
+```
+    Mono.fromCallable(() -> producer.send(record))
+        .subscribeOn(Schedulers.boundedElastic());
+```
 
 - https://stackoverflow.com/questions/52215917/callable-vs-supplier-interface-in-java
 
