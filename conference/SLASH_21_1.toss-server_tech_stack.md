@@ -9,5 +9,5 @@
 ### istio
 
 ### 카나리 배포
-
-### dc/os VS kubernetes
+새로운 버전의 소프트웨어를 프로덕션에 배포할 때 위험을 줄이기 위해 변경 사항을 일부 사용자에게만 먼저 내보내는 기법
+### dc/os VS kubernetes 
